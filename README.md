@@ -12,7 +12,7 @@ NutriApp is designed to assist users in meeting their calorie objectives, such a
 
 The project was created to put the CustomView concept into effect, that is, to construct a visualization component that does not exist natively on Android, the Portuguese course served as a tutorial [Android Express](https://androiddeveloper.com.br/inscricao).
 
-## Como usar
+## Como usar / How to use
 
 :brazil:
 
@@ -31,5 +31,5 @@ To test the App it is necessary to create a project on [Firebase](https://fireba
 ## Projeto / Project
 
 <div align="center">
-<img style="width: 25%;" src=".github/Nutriapp.gif">
+<img style="width: 300px; height: 300px;" src=".github/Nutriapp.gif">
 </div>
