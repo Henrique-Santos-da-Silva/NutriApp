@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#18263D"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/app_name" />
+
+    <ProgressBar
+        android:id="@+id/pb_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/progress1"
+        android:indeterminateTint="@color/blue"
+        android:indeterminateOnly="true"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/progress1"
+        app:layout_constraintEnd_toEndOf="@id/progress1"
+        app:layout_constraintBottom_toBottomOf="@id/progress1" />
+
+    <club.androidexpress.nutritionapp.views.CustomProgressBar
+        android:id="@+id/progress1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:my_progress="0"
+        app:my_progress_bg_color="#111B2A"
+        app:my_progress_color="@color/blue" />
+
+    <club.androidexpress.nutritionapp.views.CustomProgressBar
+        android:id="@+id/progress2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:my_progress="0"
+        app:my_progress_bg_color="#111B2A"
+        app:my_progress_color="@color/yellow_2" />
+
+    <club.androidexpress.nutritionapp.views.CustomProgressBar
+        android:id="@+id/progress3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:my_progress="0"
+        app:my_progress_bg_color="#111B2A"
+        app:my_progress_color="@color/magenta" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_img_calories"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/gradient_1"
+        android:scaleType="center"
+        android:src="@drawable/ic_cake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress1"
+        app:shapeAppearanceOverlay="@style/image_buttons_rounded" />
+
+    <TextView
+        android:id="@+id/txt_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories"
+        android:textColor="@color/gradient_1_end"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/shapeable_img_calories"
+        app:layout_constraintStart_toStartOf="@id/shapeable_img_calories"
+        app:layout_constraintTop_toBottomOf="@id/shapeable_img_calories" />
+
+    <TextView
+        android:id="@+id/txt_score_calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/txt_calories"
+        app:layout_constraintEnd_toEndOf="@id/txt_calories"
+        app:layout_constraintTop_toBottomOf="@id/txt_calories" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_img_carbohydrates"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/gradient_2"
+        android:scaleType="center"
+        android:src="@drawable/ic_fastfood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress1"
+        app:shapeAppearanceOverlay="@style/image_buttons_rounded" />
+
+    <TextView
+        android:id="@+id/txt_carbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/carbohydrates"
+        android:textColor="@color/gradient_2_end"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/shapeable_img_carbohydrates"
+        app:layout_constraintStart_toStartOf="@id/shapeable_img_carbohydrates"
+        app:layout_constraintTop_toBottomOf="@id/shapeable_img_carbohydrates" />
+
+    <TextView
+        android:id="@+id/txt_score_carbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/txt_carbohydrates"
+        app:layout_constraintEnd_toEndOf="@id/txt_carbohydrates"
+        app:layout_constraintTop_toBottomOf="@id/txt_carbohydrates" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_img_proteins"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:background="@drawable/gradient_3"
+        android:scaleType="center"
+        android:src="@drawable/ic_restaurant"
+        app:layout_constraintStart_toEndOf="@id/shapeable_img_calories"
+        app:layout_constraintEnd_toStartOf="@id/shapeable_img_carbohydrates"
+        app:layout_constraintTop_toBottomOf="@id/progress1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:shapeAppearanceOverlay="@style/image_buttons_rounded" />
+
+    <TextView
+        android:id="@+id/txt_proteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proteins"
+        android:textColor="@color/magenta"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/shapeable_img_proteins"
+        app:layout_constraintStart_toStartOf="@id/shapeable_img_proteins"
+        app:layout_constraintTop_toBottomOf="@id/shapeable_img_proteins" />
+
+    <TextView
+        android:id="@+id/txt_score_proteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/txt_proteins"
+        app:layout_constraintEnd_toEndOf="@id/txt_proteins"
+        app:layout_constraintTop_toBottomOf="@id/txt_proteins" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

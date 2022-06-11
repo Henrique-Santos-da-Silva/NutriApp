@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "650962910619",
+    "project_id": "nutritionapp-867d7",
+    "storage_bucket": "nutritionapp-867d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650962910619:android:bed77a4bc112b1f92e753e",
+        "android_client_info": {
+          "package_name": "club.androidexpress.nutritionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650962910619-g5f23cuf6q94uk8acaepn84s7kfavo3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBssdVZ4gBm3y4GV1z39UE50TAmZhMfreU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650962910619-g5f23cuf6q94uk8acaepn84s7kfavo3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/refresh" />
+
+    <item
+        android:id="@+id/calories"
+        android:title="@string/calories" />
+
+    <item
+        android:id="@+id/carbohydrates"
+        android:title="@string/carbohydrates" />
+
+    <item
+        android:id="@+id/proteins"
+        android:title="@string/proteins" />
+
+</menu>

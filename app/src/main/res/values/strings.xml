@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Nutrition App</string>
+    <string name="calories">Calories</string>
+    <string name="score">0 / 0</string>
+    <string name="carbohydrates">Carbohydrates</string>
+    <string name="proteins">Proteins</string>
+    <string name="refresh">refresh</string>
+    <string name="value">Value</string>
+    <string name="goal">Goal</string>
+    <string name="save">Save</string>
+</resources>
